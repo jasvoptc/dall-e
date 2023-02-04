@@ -20,7 +20,8 @@ function CreatePost() {
     if(form.prompt){
       try {
         setGeneratingImg(true);
-        const response = await fetch ('http://localhost:8080/api/v1/dalle',{
+        //http://localhost:8080/api/v1/dalle
+        const response = await fetch ('https://dall-e-2peg.onrender.com/api/v1/dalle',{
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
